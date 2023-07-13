@@ -1,0 +1,55 @@
+.resorts-container {
+  padding: 1vh 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.responsive {
+  padding: 6px;
+  margin: 10px;
+  border: 1px solid #786969;
+  border-radius: 5px;
+  width: 29.99999%;
+}
+
+.gallery {
+  border: 1px solid #ccc;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: 250px;
+  transform: scale(1);
+}
+.gallery:hover img {
+  transform: scale(1.1);
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 47.99999%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}

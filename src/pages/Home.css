@@ -1,0 +1,9 @@
+.carousel .slide .legend {
+  border: 0;
+  margin: 0;
+  background-color: transparent;
+  bottom: auto;
+  top: 30px;
+  left: 30px;
+  opacity: 100%;
+}
