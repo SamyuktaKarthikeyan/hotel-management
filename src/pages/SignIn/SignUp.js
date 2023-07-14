@@ -4,6 +4,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { Paper, TextField, Button } from '@mui/material';
+import { useDispatch } from 'react-redux';
 
 const paperStyle = {
   padding: '30px 20px',
@@ -16,6 +17,7 @@ function SignUp() {
     email: '',  
     fname: '',
     lname: '',
+    type:'',
     empno: '',
     password: '',
   });
@@ -24,11 +26,37 @@ function SignUp() {
     { value: 'Admin', label: 'Admin' },
   ];
   const [selectedOption, setSelectedOption] = useState(options[0].value);
+
+  const dispatch = useDispatch()
+  const register = () => {
+    dispatch({
+      type: 'REGISTER',
+      payload: {
+        id:(new Date()).getTime().toString(),
+        fname: data.fname,
+        lname: data.lname,
+        email: data.email,
+        empno: data.empno,
+        password: data.password,
+        type: selectedOption
+            }
+    })
+    setData({
+      email: '',
+      fname: '',
+      lname: '',
+      type:'',
+      empno: '',
+      password: '',
+    });
+  }
   const handleChange = (e) => {
     const selectedOption = e.target.value;
+    setData({ ...data, type: selectedOption });
     setSelectedOption(selectedOption);
     console.log(selectedOption);
   };
+
   const ValidateEmail=()=>{
     let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(data.email==="")
@@ -128,7 +156,7 @@ function SignUp() {
           <br/>
           <br/>
           <div style={{display:'flex',   flexDirection: 'column' , justifyContent:'center',   alignItems: 'center'}}>
-        <Button variant="contained" type="submit" style={{width:'10vw'}}>
+        <Button variant="contained" type="submit" style={{width:'10vw'}} onClick={register}>
           Submit
         </Button>
         <br/>

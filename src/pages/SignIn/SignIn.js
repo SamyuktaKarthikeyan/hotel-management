@@ -15,7 +15,7 @@ const paperStyle={
 function SignIn() {
     const options = [
         { value: 'User', label: 'User' },
-        { value: 'Admin', label: 'Admin' }  
+        { value: 'Staff', label: 'Staff' }  
     ];
     const [selectedOption, setSelectedOption] = useState(options[0].value);
     const handleChange = (e) => {

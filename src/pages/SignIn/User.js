@@ -3,15 +3,14 @@ import { useState } from 'react';
 import { TextField } from '@mui/material';
 import {Button} from '@mui/material';
 import {Link} from 'react-router-dom';
+import { useSelector } from 'react-redux';
+  
 function User() {
     const [data, setData] = useState({
         email: '',
         password: ''
     });
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(data);
-    }
+    const users = useSelector(state => state.users);
     const ValidateEmail=()=>{
         let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         if(data.email==="")
@@ -37,15 +36,25 @@ function User() {
         }
         
       }
-    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const user = users.find(user => user.type === 'User');
+
+    if (data.email === user?.email && data.email === user?.email) {
+      alert('Login Successful');
+    } else {
+      alert('Invalid Credentials');
+    }
+  };
+
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form>
         <TextField id="outlined-basic" label="Email" variant="outlined" value={data.email}     
           onChange={(e) => setData({ ...data, email: e.target.value })}  helperText={ValidateEmail()} /> <br/><br/>
         <TextField id="outlined-basic" label="Password" variant="outlined" type='password' value={data.password} helperText={ValidatePass()} onChange={(e) => setData({ ...data, password: e.target.value })}/> <br/><br/>
         <div style={{display:'flex',   flexDirection: 'column' , justifyContent:'center',   alignItems: 'center'}}>
-        <Button variant="contained" type="submit" style={{width:'10vw'}}>
+        <Button variant="contained" type="submit" style={{width:'10vw'}} onClick={handleSubmit}>
           Submit
         </Button>
         <br/>
