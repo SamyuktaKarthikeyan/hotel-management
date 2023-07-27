@@ -17,7 +17,7 @@ function NavBar() {
         <li onClick={() => handleClick('/')} className={activeItem === '/' ? 'nav-item active' : 'nav-item'}>HOME</li>
         <li onClick={() => handleClick('/resorts')} className={activeItem === '/resorts' ? 'nav-item active' : 'nav-item'}>RESORTS</li>
         <li onClick={() => handleClick('/offers')} className={activeItem === '/offers' ? 'nav-item active' : 'nav-item'}>OFFERS</li>
-        <li onClick={() => handleClick('/membership')} className={activeItem === '/membership' ? 'nav-item active' : 'nav-item'}>MEMBERSHIP</li>
+        <li onClick={() => handleClick('/rooms')} className={activeItem === '/rooms' ? 'nav-item active' : 'nav-item'}>ROOMS</li>
         <li onClick={() => handleClick('/reviews')} className={activeItem === '/reviews' ? 'nav-item active' : 'nav-item'}>REVIEWS</li>
         <li onClick={() => handleClick('/giftcards')} className={activeItem === '/giftcards' ? 'nav-item active' : 'nav-item'}>GIFT CARDS</li>
       </ul>

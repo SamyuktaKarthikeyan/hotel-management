@@ -5,6 +5,8 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { Paper, TextField, Button } from '@mui/material';
 import { useDispatch } from 'react-redux';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const paperStyle = {
   padding: '30px 20px',
@@ -13,6 +15,7 @@ const paperStyle = {
 };
 
 function SignUp() {
+  const navigate=useNavigate();
   const [data, setData] = useState({
     email: '',  
     fname: '',
@@ -41,6 +44,24 @@ function SignUp() {
         type: selectedOption
             }
     })
+    const value={
+      email:data.email,  
+      firstName:data.fname,
+      lastName:data.lname,  
+      password:data.password
+    }
+    console.log(value);
+    navigate('/signin');
+    axios
+    .post("http://localhost:8080/api/v1/auth/register", value)
+    .then((response) => {
+      navigate("/login", { state: { signupSuccess: true } });
+    })
+    .catch((error) => {
+      
+      console.error(error);
+  });
+
     setData({
       email: '',
       fname: '',
@@ -49,6 +70,7 @@ function SignUp() {
       empno: '',
       password: '',
     });
+    
   }
   const handleChange = (e) => {
     const selectedOption = e.target.value;
@@ -104,7 +126,7 @@ function SignUp() {
   };
     
   return (
-    <div style={{margin:0, height:'100%', backgroundImage:'url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Capsule_hotel.jpg/800px-Capsule_hotel.jpg")', backgroundSize:'cover'}}>
+    <div style={{margin:0, height:'130vh', backgroundImage:'url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Capsule_hotel.jpg/800px-Capsule_hotel.jpg")', backgroundSize:'cover', paddingTop:'10vh'}}>
       <Paper style={paperStyle} elevation={10}>
         <h1 style={{ textAlign: 'center' }}>Sign Up</h1>
 

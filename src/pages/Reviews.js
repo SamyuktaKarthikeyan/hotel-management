@@ -8,7 +8,7 @@ function Reviews() {
     <div>
        <Carousel autoPlay={true} showArrows={true} infiniteLoop={true} showThumbs={false} showIndicators={false} showStatus={false}>
       <div style={{backgroundColor:'#f08e67'}}>
-        <div>
+        <div style={{ marginTop:'5vh'}}>
         <img src="https://www.peninsula.com/en/-/media/images/shanghai/03roomssuites/grand-deluxe-suite/peninsula-shanghai-accommodations-grand-deluxe--suite.jpg?mw=905&hash=8819BCD1A4C7B51E6DDB86792026B28E" alt="Slide 2" style={{height:"45vh", objectFit:'cover'}}/>
         </div>
         <div class="testimonial">
@@ -23,7 +23,7 @@ function Reviews() {
                     </div>
       </div>
       <div style={{backgroundColor:'#f08e67'}}>
-        <div>
+        <div style={{ marginTop:'5vh'}}>
         <img src="https://ak-d.tripcdn.com/images/200n0d0000006vxx7445C_R_960_660_R5_D.jpg" alt="Slide 2" style={{height:"45vh", objectFit:'cover'}}/>
         </div>
         <div class="testimonial">
@@ -38,7 +38,7 @@ function Reviews() {
                     </div>
       </div>
       <div style={{backgroundColor:'#f08e67'}}>
-        <div>
+        <div style={{ marginTop:'5vh'}}>
         <img src="https://dimg04.c-ctrip.com/images/0225j120009ztiqdzEA7C.jpg" alt="Slide 2" style={{height:"45vh", objectFit:'cover'}}/>
         </div>
         <div class="testimonial">
@@ -53,7 +53,7 @@ function Reviews() {
                     </div>
       </div>
       <div style={{backgroundColor:'#f08e67'}}>
-        <div>
+        <div style={{ marginTop:'5vh'}}>
         <img src="https://inspirationfortravellers.com/wp-content/uploads/2014/10/Kempinski-Geneve-petit-dejeuner-32.jpg" alt="Slide 2" style={{height:"45vh", objectFit:'cover'}}/>
         </div>
         <div class="testimonial">
@@ -68,7 +68,7 @@ function Reviews() {
                     </div>
       </div>
       <div style={{backgroundColor:'#f08e67'}}>
-        <div>
+        <div style={{ marginTop:'5vh'}}>
         <img src="https://images.squarespace-cdn.com/content/v1/5ce3da3aa44eb30001f48c04/1575326757325-THRHYUYIQ4Y37NF73R0O/Vildsvinet-hotellrum-Dammvillan-Eriksberg_hotell_safaripark-Blekinge-066-1500px.jpg" alt="Slide 2" style={{height:"45vh", objectFit:'cover'}}/>
         </div>
         <div class="testimonial">

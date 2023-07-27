@@ -7,6 +7,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { Paper } from '@mui/material';
+
 const paperStyle={
         padding: '30px 20px',
         width: '30vw',
@@ -26,7 +27,7 @@ function SignIn() {
     };
     let form = selectedOption === "User" ? <User /> : <Admin data={null}/>;
   return (
-    <div style={{margin:0, height:'100vh', backgroundImage:'url("https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2022/04/b611b-resorts-near-coimbatore.jpg?fit=1000%2C667&ssl=1")'}}>
+    <div style={{margin:0, height:'100vh', backgroundImage:'url("https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2022/04/b611b-resorts-near-coimbatore.jpg?fit=1000%2C667&ssl=1")', paddingTop:'10vh'}}>
         <Paper style={paperStyle} elevation={10}>
             <h1 style={{textAlign:"center"}}>Sign In</h1>
         <FormControl>

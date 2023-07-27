@@ -5,7 +5,7 @@ import './GiftCard.css'
 
 function GiftCard() {
   return (
-    <div style={{background:'linear-gradient(to right, #E9F8FF, #90B2D8, #C1E3FF)', height:'160vh'}}>
+    <div style={{background:'linear-gradient(to right, #E9F8FF, #90B2D8, #C1E3FF)', height:'160vh', paddingTop:'10vh'}}>
       <Paper style={{display:'flex', height:'75vh', width:'80vw', margin:'auto', marginTop:'2vh', borderRadius:'3vh'}} elevation={5}>
         <div style={{width:'60%'}}>
         <Carousel autoPlay={true} showArrows={false} infiniteLoop={true} showThumbs={false} showIndicators={false} showStatus={false}>
@@ -31,7 +31,7 @@ function GiftCard() {
           <div style={{display:'flex', padding:'2vh 2vw'}}>
 
         <div class="container">
-  <img src="https://www.holidify.com/images/cmsuploads/compressed/83167901_20230424143940.jpg" alt="Avatar" class="image"/>
+  <img src="https://www.holidify.com/images/cmsuploads/compressed/83167901_20230424143940.jpg" alt="Avatar" class="image" style={{height:'35vh'}}/>
   <div class="overlay">
     <div class="text">
       Stay for 3 nights and get 1 night free
@@ -39,15 +39,15 @@ function GiftCard() {
   </div>
 </div>
         <div class="container">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Fernhills_Palace%2C_Ooty.JPG/1200px-Fernhills_Palace%2C_Ooty.JPG" alt="Avatar" class="image"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Fernhills_Palace%2C_Ooty.JPG/1200px-Fernhills_Palace%2C_Ooty.JPG" alt="Avatar" class="image" style={{height:'35vh'}}/>
   <div class="overlay">
-    <div class="text">Hello World</div>
+    <div class="text">Free complimentary breakfast all July</div>
   </div>
 </div>
         <div class="container">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Kerala_Houseboat_%28191490747%29.jpeg/1200px-Kerala_Houseboat_%28191490747%29.jpeg" alt="Avatar" class="image"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Kerala_Houseboat_%28191490747%29.jpeg/1200px-Kerala_Houseboat_%28191490747%29.jpeg" alt="Avatar" class="image" style={{height:'35vh'}}/>
   <div class="overlay">
-    <div class="text">Hello World</div>
+    <div class="text">20% discount on houseboat</div>
   </div>
 </div>
           </div>

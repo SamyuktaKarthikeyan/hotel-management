@@ -1,9 +1,83 @@
-.carousel .slide .legend {
-  border: 0;
-  margin: 0;
-  background-color: transparent;
-  bottom: auto;
-  top: 30px;
-  left: 30px;
-  opacity: 100%;
+.section-one {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url(https://img2.wallspic.com/previews/1/2/8/0/70821/70821-the_world-resort-maldives-arrangement-travel-x750.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness();
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.containerhome {
+  text-align: center;
+  color: white;
+}
+
+.homehead {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.homepara {
+  font-size: 1.15rem;
+  letter-spacing: 3px;
+  margin: 20px 0 40px;
+}
+
+.home-button {
+  color: white;
+  text-decoration: none;
+  border: 2px white solid;
+  padding: 10px 15px;
+  width: "20vw";
+}
+
+.home-button:hover,
+.home-button:focus {
+  background: hsl(0, 100%, 100%, 0.2);
+  outline: none;
+}
+
+.section-two {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.container-two {
+  display: flex;
+  padding: 50px;
+  gap: 20px;
+  width: 100%;
+}
+
+.content h1 {
+  font-size: 2.75rem;
+}
+
+.content h1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: #d1a370;
+}
+
+.content p {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.content-image img {
+  width: 300px;
+  object-fit: scale-down;
 }
