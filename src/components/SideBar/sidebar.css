@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   width: 25%;
-  background-color: #f1f1f1;
+  background-color: #062050;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -11,7 +11,7 @@
 
 .sidebar-item {
   display: block;
-  color: #000;
+  color: aliceblue;
   padding: 15px 16px;
   text-decoration: none;
 }

@@ -27,27 +27,27 @@ function GiftCard() {
       </Paper>
       <div style={{marginTop:'5vh'}}>
         <Paper elevation={5} style={{ width:'76vw', margin:'auto', padding:'2vh 2vw', borderRadius:'3vh'}}>
-          <h1>Discover offers</h1>
+          <h1>Discover giftcards</h1>
           <div style={{display:'flex', padding:'2vh 2vw'}}>
 
         <div class="container">
   <img src="https://www.holidify.com/images/cmsuploads/compressed/83167901_20230424143940.jpg" alt="Avatar" class="image" style={{height:'35vh'}}/>
   <div class="overlay">
     <div class="text">
-      Stay for 3 nights and get 1 night free
+      Golden membership
     </div>
   </div>
 </div>
         <div class="container">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Fernhills_Palace%2C_Ooty.JPG/1200px-Fernhills_Palace%2C_Ooty.JPG" alt="Avatar" class="image" style={{height:'35vh'}}/>
   <div class="overlay">
-    <div class="text">Free complimentary breakfast all July</div>
+    <div class="text">Silver membership</div>
   </div>
 </div>
         <div class="container">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Kerala_Houseboat_%28191490747%29.jpeg/1200px-Kerala_Houseboat_%28191490747%29.jpeg" alt="Avatar" class="image" style={{height:'35vh'}}/>
   <div class="overlay">
-    <div class="text">20% discount on houseboat</div>
+    <div class="text">Platinum membership</div>
   </div>
 </div>
           </div>

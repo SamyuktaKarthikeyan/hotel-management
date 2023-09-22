@@ -285,7 +285,6 @@ const roomcost=[
               </Select>
               </FormControl>
             <br/>
-            <p>Difference between start and end dates: {differenceInDays} days</p>
             <p>Total cost: {calculateTotalCost()} </p>
 
             <Button variant="contained" type="submit" style={{ width: '10vw' }} onClick={handleSubmit} >

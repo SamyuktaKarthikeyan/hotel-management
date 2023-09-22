@@ -18,7 +18,7 @@ function SideBar() {
           onClick={() => handleClick('/dashboard')}
           className={activeItem === '/dashboard' ? 'sidebar-item active' : 'sidebar-item'}
         >
-          Your Profile
+          Booking History
         </li>
         <li
           onClick={() => handleClick('/dashboard/bookticket')}

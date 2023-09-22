@@ -31,7 +31,7 @@ const Food = () => {
           <div style={{display:'flex', padding:'2vh 2vw'}}>
 
         <div class="container">
-  <img src="https://www.mothersrecipe.com/wp-content/uploads/2019/10/Indian_Aloo_Batata_Poha_with_Pomegranates_Recipe_Archanas_Kitchen-1-624x416.jpg" alt="Avatar" class="image" style={{height:"35vh"}}/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Full_English_breakfast.jpg" alt="Avatar" class="image" style={{height:"35vh"}}/>
   <div class="overlay">
     <div class="text">
       Breakfast

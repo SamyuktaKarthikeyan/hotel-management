@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 const paperStyle = {
   padding: '30px 20px',
   width: '30vw',
-  margin: '20px auto',
+  margin: '40px auto',
 };
 
 function SignUp() {
